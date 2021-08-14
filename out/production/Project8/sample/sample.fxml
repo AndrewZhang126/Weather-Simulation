@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane fx:id="anchor1" prefHeight="800.0" prefWidth="1080.0" style="-fx-background-color: WHITE;">
+         <children>
+            <Label fx:id="lblT1" layoutX="84.0" layoutY="610.0" text="&gt; 35">
+               <font>
+                  <Font name="Andale Mono" size="15.0" />
+               </font></Label>
+            <ImageView fx:id="imgMap" fitHeight="374.0" fitWidth="593.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <Circle fx:id="circle1" fill="DODGERBLUE" layoutX="78.0" layoutY="51.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle2" fill="DODGERBLUE" layoutX="62.0" layoutY="98.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle3" fill="DODGERBLUE" layoutX="45.0" layoutY="152.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="36.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle4" fill="DODGERBLUE" layoutX="68.0" layoutY="221.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="43.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle7" fill="DODGERBLUE" layoutX="186.0" layoutY="71.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="48.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle40" fill="DODGERBLUE" layoutX="526.0" layoutY="174.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="17.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle19" fill="DODGERBLUE" layoutX="332.0" layoutY="89.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="36.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle13" fill="DODGERBLUE" layoutX="270.0" layoutY="67.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle9" fill="DODGERBLUE" layoutX="142.0" layoutY="245.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="43.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle37" fill="DODGERBLUE" layoutX="465.0" layoutY="264.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle24" fill="DODGERBLUE" layoutX="380.0" layoutY="116.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle36" fill="DODGERBLUE" layoutX="491.0" layoutY="246.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle41" fill="DODGERBLUE" layoutX="542.0" layoutY="141.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="17.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle45" fill="DODGERBLUE" layoutX="571.0" layoutY="59.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle12" fill="DODGERBLUE" layoutX="195.0" layoutY="251.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="39.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle23" fill="DODGERBLUE" layoutX="360.0" layoutY="296.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle26" fill="DODGERBLUE" layoutX="389.0" layoutY="272.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle28" fill="DODGERBLUE" layoutX="419.0" layoutY="170.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle27" fill="DODGERBLUE" layoutX="431.0" layoutY="124.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle33" fill="DODGERBLUE" layoutX="474.0" layoutY="188.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle39" fill="DODGERBLUE" layoutX="499.0" layoutY="149.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle43" fill="DODGERBLUE" layoutX="559.0" layoutY="116.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="17.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle34" fill="DODGERBLUE" layoutX="506.0" layoutY="194.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle44" fill="DODGERBLUE" layoutX="551.0" layoutY="86.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle35" fill="DODGERBLUE" layoutX="506.0" layoutY="221.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle42" fill="DODGERBLUE" layoutX="517.0" layoutY="106.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle30" fill="DODGERBLUE" layoutX="421.0" layoutY="228.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle29" fill="DODGERBLUE" layoutX="436.0" layoutY="201.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle32" fill="DODGERBLUE" layoutX="451.0" layoutY="161.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle25" fill="DODGERBLUE" layoutX="383.0" layoutY="178.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle38" fill="DODGERBLUE" layoutX="471.0" layoutY="327.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="48.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle22" fill="DODGERBLUE" layoutX="354.0" layoutY="243.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle20" fill="DODGERBLUE" layoutX="341.0" layoutY="146.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle14" fill="DODGERBLUE" layoutX="274.0" layoutY="116.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="36.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle5" fill="DODGERBLUE" layoutX="126.0" layoutY="98.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="39.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle6" fill="DODGERBLUE" layoutX="98.0" layoutY="170.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="36.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle10" fill="DODGERBLUE" layoutX="195.0" layoutY="131.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="39.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle8" fill="DODGERBLUE" layoutX="146.0" layoutY="175.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="36.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle18" fill="DODGERBLUE" layoutX="274.0" layoutY="296.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="68.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle15" fill="DODGERBLUE" layoutX="282.0" layoutY="157.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle21" fill="DODGERBLUE" layoutX="345.0" layoutY="194.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle16" fill="DODGERBLUE" layoutX="286.0" layoutY="201.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle11" fill="DODGERBLUE" layoutX="215.0" layoutY="188.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle17" fill="DODGERBLUE" layoutX="306.0" layoutY="234.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle31" fill="DODGERBLUE" layoutX="423.0" layoutY="272.0" onMouseClicked="#handleMouseClick" opacity="0.5" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#f8f7f7" layoutX="68.0" layoutY="618.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: RED;" />
+            <Circle fill="#f8f7f7" layoutX="68.0" layoutY="657.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: ORANGE;" />
+            <Circle fill="#f8f7f7" layoutX="68.0" layoutY="695.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: YELLOW;" />
+            <Circle fill="#f8f7f7" layoutX="212.0" layoutY="619.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: GREEN;" />
+            <Circle fill="#f8f7f7" layoutX="212.0" layoutY="657.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: BLUE;" />
+            <Circle fill="#f8f7f7" layoutX="212.0" layoutY="695.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: PURPLE;" />
+            <Label fx:id="lblT2" layoutX="86.0" layoutY="648.0" text="25 - 35">
+               <font>
+                  <Font name="Andale Mono" size="15.0" />
+               </font></Label>
+            <Label fx:id="lblT3" layoutX="86.0" layoutY="686.0" text="15 - 25">
+               <font>
+                  <Font name="Andale Mono" size="15.0" />
+               </font></Label>
+            <Label fx:id="lblT4" layoutX="232.0" layoutY="610.0" text="5 - 15">
+               <font>
+                  <Font name="Andale Mono" size="15.0" />
+               </font></Label>
+            <Label fx:id="lblT5" layoutX="232.0" layoutY="648.0" text="-5 - 5">
+               <font>
+                  <Font name="Andale Mono" size="15.0" />
+               </font></Label>
+            <Label fx:id="lblT6" layoutX="231.0" layoutY="686.0" text="&lt; -5">
+               <font>
+                  <Font name="Andale Mono" size="15.0" />
+               </font></Label>
+            <CheckBox fx:id="checkC" layoutX="252.0" layoutY="738.0" mnemonicParsing="false" onAction="#handleCheckC" selected="true">
+               <font>
+                  <Font size="15.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="checkF" layoutX="373.0" layoutY="738.0" mnemonicParsing="false" onAction="#handleCheckF">
+               <font>
+                  <Font size="15.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="check1" layoutX="332.0" layoutY="609.0" mnemonicParsing="false" onAction="#handleCheck1" selected="true">
+               <font>
+                  <Font name="Andale Mono" size="15.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="check2" layoutX="332.0" layoutY="647.0" mnemonicParsing="false" onAction="#handleCheck2">
+               <font>
+                  <Font name="Andale Mono" size="15.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="check3" layoutX="332.0" layoutY="685.0" mnemonicParsing="false" onAction="#handleCheck3">
+               <font>
+                  <Font name="Andale Mono" size="15.0" />
+               </font></CheckBox>
+            <ChoiceBox fx:id="choice1" layoutX="147.0" layoutY="558.0" prefHeight="27.0" prefWidth="242.0" style="-fx-background-color: WHITE;">
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0" />
+               </effect></ChoiceBox>
+            <Label fx:id="lblU1" layoutX="276.0" layoutY="739.0" text="METRIC">
+               <font>
+                  <Font name="Andale Mono" size="15.0" />
+               </font></Label>
+            <Label fx:id="lblU2" layoutX="395.0" layoutY="739.0" text="IMPERIAL">
+               <font>
+                  <Font name="Andale Mono" size="15.0" />
+               </font></Label>
+            <Button fx:id="btnSimulateY" layoutX="607.0" layoutY="682.0" mnemonicParsing="false" onAction="#handleBtnSimulateY" prefHeight="78.0" prefWidth="120.0" style="-fx-background-color: WHITE;" text="YELLOWSTONE SUPERVOLCANO" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Andale Mono" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <LineChart fx:id="lineChart" layoutX="602.0" layoutY="302.0" prefHeight="197.0" prefWidth="466.0" style="-fx-background-color: WHITE;">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+            <Label fx:id="lblSim" alignment="CENTER" layoutX="607.0" layoutY="584.0" prefHeight="86.0" prefWidth="438.0" text="Label" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Andale Mono" size="14.0" />
+               </font></Label>
+            <Label fx:id="lblUnits" alignment="TOP_LEFT" layoutX="118.0" layoutY="740.0" prefHeight="50.0" prefWidth="127.0" text="Label" wrapText="true">
+               <font>
+                  <Font name="Andale Mono" size="15.0" />
+               </font></Label>
+            <ListView fx:id="lst1" layoutX="646.0" layoutY="75.0" prefHeight="143.0" prefWidth="425.0" />
+            <TextField fx:id="txtYear" layoutX="102.0" layoutY="436.0" prefHeight="27.0" prefWidth="100.0">
+               <font>
+                  <Font name="Andale Mono" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="txtMonth" layoutX="212.0" layoutY="436.0" prefHeight="27.0" prefWidth="100.0">
+               <font>
+                  <Font name="Andale Mono" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="txtDay" layoutX="320.0" layoutY="436.0" prefHeight="27.0" prefWidth="100.0">
+               <font>
+                  <Font name="Andale Mono" size="15.0" />
+               </font></TextField>
+            <Button fx:id="btnLeft" contentDisplay="CENTER" layoutX="60.0" layoutY="436.0" mnemonicParsing="false" onAction="#handlebtnLeft" prefHeight="27.0" prefWidth="35.0" style="-fx-background-color: WHITE;" text="&lt;" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0" />
+               </effect></Button>
+            <Button fx:id="btnRight" layoutX="424.0" layoutY="436.0" mnemonicParsing="false" onAction="#handlebtnRight" prefHeight="27.0" prefWidth="35.0" style="-fx-background-color: WHITE;" text="&gt;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0" />
+               </effect></Button>
+            <Button fx:id="btnDate" layoutX="102.0" layoutY="475.0" mnemonicParsing="false" onAction="#handlebtnDate" prefHeight="27.0" prefWidth="160.0" style="-fx-background-color: WHITE;" text="ENTER DATE">
+               <font>
+                  <Font name="Andale Mono" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0" />
+               </effect></Button>
+            <Label fx:id="lblName" alignment="CENTER" layoutX="767.0" layoutY="49.0" prefHeight="17.0" prefWidth="200.0" text="Label" textAlignment="CENTER">
+               <font>
+                  <Font name="Andale Mono" size="18.0" />
+               </font></Label>
+            <Button fx:id="btnSimulateHS" layoutX="767.0" layoutY="682.0" mnemonicParsing="false" onAction="#handleBtnSimulateHS" prefHeight="78.0" prefWidth="120.0" style="-fx-background-color: WHITE;" text="HURRICANE (GULF COAST)" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Andale Mono" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Button fx:id="btnSimulateHE" layoutX="925.0" layoutY="682.0" mnemonicParsing="false" onAction="#handleBtnSimulateHE" prefHeight="78.0" prefWidth="120.0" style="-fx-background-color: WHITE;" text="HURRICANE (EAST COAST)" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Andale Mono" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Button fx:id="btnToday" layoutX="273.0" layoutY="475.0" mnemonicParsing="false" onAction="#handlebtnToday" prefHeight="27.0" prefWidth="144.0" style="-fx-background-color: WHITE;" text="TODAY">
+               <font>
+                  <Font name="Andale Mono" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0" />
+               </effect></Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="735.0" layoutY="533.0" prefHeight="50.0" prefWidth="185.0" text="SIMULATIONS">
+               <font>
+                  <Font name="Andale Mono" size="24.0" />
+               </font></Label>
+            <Label layoutX="61.0" layoutY="740.0" text="UNITS:">
+               <font>
+                  <Font name="Andale Mono" size="15.0" />
+               </font></Label>
+            <ImageView fx:id="imgSim" fitHeight="40.0" fitWidth="46.0" layoutX="536.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="649.0" layoutY="227.0" text="* Predicted Value">
+               <font>
+                  <Font name="Andale Mono" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblGraph" alignment="CENTER" contentDisplay="CENTER" layoutX="801.0" layoutY="293.0" text="PAST 50 DAYS" textAlignment="CENTER">
+               <font>
+                  <Font name="Andale Mono" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" alignment="CENTER" layoutX="91.0" layoutY="510.0" prefHeight="17.0" prefWidth="353.0" text="Label">
+               <font>
+                  <Font name="Andale Mono" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
